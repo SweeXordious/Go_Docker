@@ -1,4 +1,4 @@
-package Go_Docker
+package commands
 
 import (
 	"context"
@@ -12,6 +12,8 @@ func ListContainer() error {
 	if err != nil {
 		panic(err)
 	}
+
+	cli.NegotiateAPIVersion(context.Background())
 
 	containers, err := cli.ContainerList(
 		context.Background(),

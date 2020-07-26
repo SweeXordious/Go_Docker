@@ -1,4 +1,4 @@
-package Go_Docker
+package commands
 
 import (
 	"context"
@@ -15,6 +15,8 @@ func RunImageByName(image string) (string, error) {
 		fmt.Println("Unable to create docker client")
 		panic(err)
 	}
+
+	cli.NegotiateAPIVersion(context.Background())
 
 	hostBinding := nat.PortBinding{
 		HostIP:   "0.0.0.0",

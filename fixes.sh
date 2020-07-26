@@ -4,3 +4,4 @@
 rm -rf $GOPATH/src/github.com/docker/docker/vendor
 rm -rf $GOPATH/src/github.com/docker/cli/vendor
 rm -rf $GOPATH/src/github.com/docker/distribution/vendor
+rm -rf $GOPATH/src/github.com/containerd/containerd/vendor

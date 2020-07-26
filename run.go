@@ -9,7 +9,7 @@ import (
 	"github.com/docker/go-connections/nat"
 )
 
-func runImageByName(image string) (string, error) {
+func RunImageByName(image string) (string, error) {
 	cli, err := client.NewClientWithOpts()
 	if err != nil {
 		fmt.Println("Unable to create docker client")
